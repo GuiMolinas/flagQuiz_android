@@ -42,12 +42,33 @@
         android:inputType="textPersonName"
         android:padding="12dp" />
 
-    <Button
-        android:id="@+id/btnPlay"
+    <!-- Layout horizontal para os botões -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        android:text="Jogar!" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Jogar!"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Sair"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp" />
+
+    </LinearLayout>
 
     <ImageView
         android:layout_marginTop="10dp"
@@ -69,7 +90,5 @@
         android:text="1729440955"
         android:textColor="#000000"
         android:textSize="14sp" />
-
-
 
 </LinearLayout>
